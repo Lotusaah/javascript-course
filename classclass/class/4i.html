@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>4i</title>
+    <style>
+      .yellow-button {
+        background-color: yellow;
+      }
+      .orange-button {
+        background-color: orange;
+      }
+      input[type="button"]
+     </style>
+
+  </head>
+  
+  <body>
+    <p>Adults Plain Cotton T-shirt</p>
+    <p>Price: $7.99</p>
+    <button class="yellow-button" 
+    onclick="alert('Added')"
+    >Add to cart</button>
+
+    <input type="button" class="orange-button" value="Buy now" onclick="bob()">
+
+    <script>
+      var x = 1;
+      var y = null;
+
+      function bob() {
+          document.querySelector(".orange-button").
+          onclick = function () {
+          console.log('Loading...');
+          setTimeout(alert('Purchased'), 1000);
+          }
+      }
+    </script>
+  </body>
+</html>

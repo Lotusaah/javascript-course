@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>postions</title>
+    <style>
+
+    </style>
+  </head>
+  <body style="
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 70px;
+    height: 3000px;
+  ">
+    <div style="
+      background-color: black;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 50px;
+      z-index: 1;
+      ">header</div>
+
+    <div style="
+      background-color: green;
+      color: white;
+      position: fixed;
+      left: 0;
+      top: 50px;
+      bottom: 0;
+      width: 70px;
+    ">
+      sidebar
+      <div style="
+      position: absolute;
+      background-color: red;
+      color: white;
+      top: 0px;
+      right: 0px;
+      z-index: 1;
+    ">
+    X
+    </div>
+    </div>
+
+    <div style="
+      position: absolute;
+      background-color: red;
+      color: white;
+      top: 60px;
+      right: 10px;
+      z-index: 1;
+    ">
+      absolute
+    </div>
+      
+    <div style="
+      background-color: lightblue;
+      height: 200px;
+      width: 200px;
+      position: static;
+      ">div 1</div>
+
+    <div style="
+      background-color: lightpink;
+      height: 200px;
+      width: 200px;
+      position: relative;
+    ">div 2
+      <div style="
+      border-radius: 5px;
+      position: absolute;
+      background-color: black;
+      color: white;
+      right: 10px;
+      bottom: 10px;
+    ">
+      5:00
+    </div>
+      </div>
+  </body>
+</html>

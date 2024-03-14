@@ -1,0 +1,38 @@
+body {
+  background-color: black;
+
+}
+
+.js-calculation {
+  color: white;
+  font-family: Arial;
+  font-size: 25px;
+}
+
+.js-greyButton {
+  color: white;
+  background-color: rgb(41, 41, 41);
+  border: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 100px;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+  margin-bottom: -10px;
+
+}
+
+.js-orangeButton {
+  color: white;
+  background-color: rgb(251, 138, 0);
+  border: none;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 100px;
+  margin-right: 2.5px;
+  margin-bottom: -10px;
+}

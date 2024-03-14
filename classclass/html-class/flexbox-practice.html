@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>flexboxPractice</title>
+    <style>
+      .tool-bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 45px;
+        background-color: rgb(129, 82, 153);
+
+      }
+      .left-section{
+        font-family: arial;
+        color: white;
+        font-weight: bold;
+        width: 100px;
+        margin-left: 10px;
+      }
+      .right-section{
+        margin-right: 10px;
+        width: 100px;
+      }
+      .button-bar{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: rgb(129, 82, 153);
+        border-color: white;
+        border-radius: 1.5px;
+        border-width: 1px;
+        color: white;
+        border-style: solid;
+       
+      }
+      .search-bar{
+        height: 25px;
+        width: 400px;
+        border-radius: 15px;
+        border-style: none;
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="tool-bar">
+      <div class="left-section">Home</div>
+      <div class="middle-section">
+        <input class="search-bar" placeholder="Search">
+      </div>
+      <div class="right-section">
+        <button class="button-bar">Download</button>
+      </div>
+    </div>
+
+  </body>
+</html>

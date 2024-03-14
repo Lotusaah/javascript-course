@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      FizzBuzz
+    </title>
+  </head>
+  <body>
+    <script>
+      const Array = [];
+    for (let i = 1; i <= 20; i++) {
+      
+      if (i % 3 === 0) {
+        Array.push('Fizz');
+      }else if (i % 3 === 0 && i % 5 === 0) {
+        Array.push('FizzBuzz');
+      } else if (i % 5 === 0) {
+        Array.push('Buzz');
+       } else {
+         Array.push(i);
+        }
+    }
+    console.log(Array);
+    </script>
+  </body>
+</html>

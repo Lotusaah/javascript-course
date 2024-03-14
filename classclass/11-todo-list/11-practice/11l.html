@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>11L</title>
+  </head>
+  <body>
+
+    <script>
+      function minMax(nums) {
+        const result = {
+          min: nums[0],
+          max: nums[0]
+        }
+
+        for (i = 0; i < nums.length; i++) {
+          const arrayI = nums[i];
+          if (arrayI < result.min) {
+            result.min = arrayI;
+          }
+
+          if (arrayI > result.max) {
+            result.max = arrayI;
+          }
+        }
+        if (result.min === undefined) {
+          result.min = null;
+        }
+        if (result.max === undefined) {
+          result.max = null;
+        }
+
+        return result;
+      }
+      
+      console.log(minMax([1, -3, 5]));
+      console.log(minMax([3]));
+      console.log(minMax([]));
+
+      function countWords(words) {
+        const results = {};
+        for (i = 0; i < words.length; i++) {
+          const word = words[i];
+
+          if (!results[word]) { 
+            results[word] = 1;}
+          else {
+          results[word]++;
+          }
+        }
+        return results;
+      }
+      console.log(countWords(['apple','apple','grape','apple','grape']));
+
+    </script>
+  </body>
+</html>

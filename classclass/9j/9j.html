@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link
+    rel="stylesheet"
+    href="9j.css">
+  </head>
+  <body>
+    <p class="js-calculation js-textView"></p>
+
+    <p>
+      <button onclick="
+        updateCalculation('1');
+      " class="js-greyButton">1</button>
+
+      <button onclick="
+        updateCalculation('2');
+      " class="js-greyButton">2</button>
+
+      <button onclick="
+        updateCalculation('3');
+      " class="js-greyButton">3</button>
+
+      <button onclick="
+        updateCalculation(' + ');
+      " class="js-orangeButton">+</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalculation('4');
+      " class="js-greyButton">4</button>
+
+      <button onclick="
+        updateCalculation('5');
+      " class="js-greyButton">5</button>
+
+      <button onclick="
+        updateCalculation('6');
+      " class="js-greyButton">6</button>
+
+      <button onclick="
+        updateCalculation(' - ');
+      " class="js-orangeButton">-</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalculation('7');
+      " class="js-greyButton">7</button>
+
+      <button onclick="
+        updateCalculation('8');
+      " class="js-greyButton">8</button>
+
+      <button onclick="
+        updateCalculation('9');
+      " class="js-greyButton">9</button>
+
+      <button onclick="
+        updateCalculation(' * ');
+      " class="js-orangeButton">*</button>
+    </p>
+
+    <p>
+      <button onclick="
+        updateCalculation('0');
+      " class="js-greyButton">0</button>
+
+      <button onclick="
+        updateCalculation(' . ');
+      " class="js-greyButton">.</button>
+
+      <button onclick="
+        calculation = eval(calculation);
+
+        displayCalculation();
+
+        localStorage.setItem('calculation', calculation);
+      " class="js-greyButton">=</button>
+
+      <button onclick="
+        updateCalculation(' / ');
+      " class="js-orangeButton">/</button>
+    </p>
+
+    <p>
+      <button onclick="
+        calculation = '';
+        displayCalculation();
+
+        localStorage.setItem('calculation', calculation);
+      " class="js-greyButton">Clear</button>
+    </p>
+
+    <script src="9j.js"></script>
+  </body>
+</html>
